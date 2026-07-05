@@ -1,3 +1,9 @@
+### 📅 Cronología del Proyecto
+* **Fase de Investigación y Concepto:** Finales de Junio 2026
+* **Despliegue de Arquitectura (UE & FDA):** Julio 2026
+* **Fase 3 (LATAM):** En desarrollo activo
+
+
 # 🤖 Food Regulatory AI Agents Ecosystem
 
 Este ecosistema consiste en el diseño, arquitectura y despliegue de agentes inteligentes de IA multimodales capaces de realizar de forma automática auditorías de listas de ingredientes y etiquetas alimentarias bajo marcos legales internacionales.
