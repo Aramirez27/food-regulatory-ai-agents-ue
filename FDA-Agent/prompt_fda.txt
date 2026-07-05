@@ -22,3 +22,48 @@ Debes regir tus dictámenes bajo:
 - **FDA Food Additive & GRAS Status:** [Análisis de aditivos según el 21 CFR]
 - **Microbiological Risk & Stability Evaluation:** [Riesgo según conservación declarada]
 - **Final Verdict:** [APPROVED / REJECTED WITH OBSERVATIONS]
+
+🇺🇸 REPORTES DE AUDITORÍA BROMATOLÓGICA Y REGULATORIA DE LA FDA (Resultados GPT-4o)
+
+- **Texto extraído / Datos de la imagen:** Enriched flour (wheat flour, niacin, reduced iron), sugar, vegetable shortening (partially hydrogenated soybean oil), semisweet chocolate chips (sugar, chocolate liquor, cocoa butter, soy lecithin), natural flavor, FD&C Yellow No. 5, tahini (sesame paste). Storage: Store in a warm warehouse at 90 °F (32 °C) for up to 90 days in a highly permeable non-hermetic packaging.
+
+- **Cumplimiento de FALCPA / FASTER Act (Alérgenos):**
+  * Alérgenos detectados: Wheat (harina de trigo), Soy (lecitina de soya y aceite de soya), Sesame (tahini / sésamo).
+  * Incumplimiento de Formato: No se observa una declaración explícita ni el destaque de alérgenos en el formato mandatorio exigido por la sección 21 CFR 101.2(c) (ya sea mediante el uso de paréntesis contiguos al ingrediente o agrupados bajo un bloque independiente de "Contains:").
+  * Omisión Crítica: El sésamo es considerado el 9° alérgeno mayor bajo la ley FASTER Act. Su declaración oculta bajo el término "tahini" sin especificar la fuente común (Sesame) constituye una infracción regulatoria grave.
+
+- **Estatus de Aditivos Alimentarios y GRAS de la FDA:**
+  * El colorante **FD&C Yellow No. 5** está declarado correctamente por su denominación específica; es un aditivo cromático aprobado por la FDA sujeto a certificación.
+  * 🛑 **Incumplimiento Crítico (Éxito del Prompt Blindado):** Se detectó con precisión que el aceite de soya parcialmente hidrogenado (PHO) tiene el estatus GRAS revocado por la FDA. Su inclusión en alimentos procesados está estrictamente prohibida, clasificando el producto automáticamente como adulterado y dictaminando un motivo de rechazo inmediato.
+
+- **Evaluación de Riesgo Microbiológico y Estabilidad:**
+  * El almacenamiento extendido a 90 °F (32 °C) dentro de un empaque altamente permeable y no hermético compromete severamente la integridad del alimento. La permeabilidad acelera la transferencia de masa (absorción de humedad del ambiente), elevando la actividad de agua ($a_w$) y propiciando un sustrato óptimo para el desarrollo de mohos y levaduras.
+  * Factores Térmicos: La exposición continua a altas temperaturas combinada con la permeabilidad al oxígeno cataliza la rancidez oxidativa de la fracción lipídica (materia grasa), deteriorando las propiedades organolépticas, reológicas y la vida útil del producto.
+  * Recomendación Técnica: Migrar hacia un empaque con propiedades de barrera contra la humedad/oxígeno y reubicar el stock en almacenamiento refrigerado o seco controlado.
+
+- **Veredicto Final:** RECHAZADO (REJECTED).
+  * Presencia ilegal de aceites parcialmente hidrogenados (PHOs) prohibidos por la FDA.
+  * Ausencia de declaración mandatoria de alérgenos mayores (Wheat, Soy, Sesame) según 21 CFR 101.2(c) y FASTER Act.
+  * Arquitectura de empaque y condiciones térmicas deficientes para asegurar la inocuidad y estabilidad microbiológica.
+
+🇺🇸 REPORTES DE AUDITORÍA BROMATOLÓGICA Y REGULATORIA DE LA FDA (Resultados Gemini Pro)
+
+- **Texto extraído / Datos de la imagen:** Enriched flour (wheat flour, niacin, reduced iron), sugar, vegetable shortening (partially hydrogenated soybean oil), semisweet chocolate chips (sugar, chocolate liquor, cocoa butter, soy lecithin), natural flavor, fd&c yellow no. 5, tahini (sesame paste). Storage: Store in a warm warehouse at 90 °F (32 °C) for up to 90 days in a highly permeable non-hermetic packaging.
+
+- **Cumplimiento de FALCPA / FASTER Act (Alérgenos):**
+  * Wheat (Trigo): Presente como harina de trigo (Alérgeno mayor bajo FALCPA).
+  * Soy (Soya): Presente como lecitina de soya y aceite de soya parcialmente hidrogenado (Alérgeno mayor bajo FALCPA).
+  * Sesame (Sésamo/Ajonjolí): Presente como tahini (pasta de sésamo). Bajo la ley FASTER Act, el sésamo es oficialmente el 9° alérgeno mayor y debe declararse de forma explícita.
+  * Observación formativa: Aunque los alérgenos de origen son técnicamente identificables dentro de la lista, debe imprimirse una declaración formal e independiente tipo "Contains: Wheat, Soy, Sesame" directamente debajo de la lista para asegurar el cumplimiento total de la FDA.
+
+- **Estatus de Aditivos Alimentarios y GRAS de la FDA:**
+  * **FD&C Yellow No. 5:** Este aditivo cromático está sujeto a una estricta certificación de la FDA. Bajo la sección 21 CFR 74.705, debe declararse obligatoriamente por su nombre común ("FD&C Yellow No. 5" o "Yellow 5") debido a reacciones de tipo alérgico en individuos sensibles. La nomenclatura aquí cumple, pero el lote utilizado debe estar certificado por la FDA.
+  * 🛑 **Aceite de Soya Parcialmente Hidrogenado (PHO) - INFRACCIÓN CRÍTICA:** La FDA retiró el estatus GRAS (Generally Recognized as Safe) a los aceites parcialmente hidrogenados debido a su contenido de grasas trans. Los fabricantes de alimentos tienen estrictamente prohibido añadir PHOs a los alimentos humanos.
+
+- **Evaluación de Riesgo Microbiológico y Estabilidad:**
+  * Condiciones de almacenamiento: Almacenar una galleta de textura blanda (que típicamente exhibe una actividad de agua intermedia, $a_w \approx 0.60 - 0.80$) a 90 °F (32 °C) durante 90 días en un empaque altamente permeable y no hermético representa un riesgo severo para la inocuidad.
+  * Riesgo Microbiológico: El empaque permeable permite el intercambio de humedad con el ambiente. Las altas temperaturas (90 °F) combinadas con el ingreso de humedad aceleran el crecimiento de mohos xerófilos y levaduras osmófilas.
+  * Estabilidad Química y Reológica: A 32 °C, la manteca de cacao de las chispas de chocolate y las grasas de la manteca vegetal superarán sus puntos de fusión. Esto provocará un "fat bloom" masivo (migración y recristalización de grasa), pérdida de la integridad estructural (colapso/fusión de las galletas) y una rápida rancidez oxidativa catalizada por el calor y la exposición al oxígeno.
+
+- **Veredicto Final:** RECHAZADO CON OBSERVACIONES (REJECTED WITH OBSERVATIONS)
+  * Este producto no puede ser aprobado para su comercialización debido a la inclusión de una sustancia expresamente prohibida (aceite parcialmente hidrogenado) y parámetros de almacenamiento inseguros que comprometen tanto la seguridad química como la microbiológica del alimento.
