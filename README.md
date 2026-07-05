@@ -13,6 +13,8 @@ La arquitectura está diseñada de forma modular por regiones independientes, fa
 
 ---
 
+---
+
 ## 🇪🇺 Fase 1: Unión Europea (Reglamento UE Nº 1169/2011)
 
 El agente de esta sección evalúa alérgenos obligatorios, alertas de la EFSA (como la prohibición del Dióxido de Titanio E-171) y riesgos de estabilidad bajo el clima europeo.
@@ -22,9 +24,32 @@ El agente de esta sección evalúa alérgenos obligatorios, alertas de la EFSA (
 ### 📊 Benchmarking de Modelos de Lenguaje (UE)
 Sometido a una matriz crítica de prueba: *"Harina enriquecida, azúcar, grasa vegetal de palma, suero de leche en polvo, lecitina de soya, dióxido de titanio. Conservación: 35 °C por 60 días en envase abierto."*
 
-*   **Precisión Regulatoria:** **GPT-4o** incurrió en omisiones graves de auditoría al no detectar la falta de destaque tipográfico en los alérgenos.
-*   **Rigor Científico:** **Gemini Lite (Flash)** demostró un excelente desempeño técnico-jurídico y agilidad.
-*   **Análisis Avanzado:** **Gemini Pro** se posicionó como el modelo óptimo, detectando con precisión reológica que a 35 °C la grasa de palma se funde y el suero de leche absorbe humedad (higroscópico), disparando la actividad de agua ($a_w$) y propiciando hongos toxigénicos.
+*   **Evolución del Modelo (GPT-4o / GPT-4o mini):** En las primeras fases de desarrollo, las versiones estándar de GPT incurrían en omisiones graves al no identificar que los alérgenos carecían de distinción tipográfica. Tras **blindar el System Prompt con reglas críticas de auditoría**, el modelo (evaluado en su versión GPT-4o mini) logró detectar con precisión quirúrgica el incumplimiento del Artículo 21 del Reglamento 1169/2011 por falta de formato destacado, además de rechazar de inmediato el aditivo prohibido E-171.
+*   **Análisis Avanzado:** **Gemini Pro** se mantiene como el modelo óptimo en la parte científica del benchmark, detectando con precisión reológica que a 35 °C la grasa de palma se funde y el suero de leche absorbe humedad (higroscópico), disparando la actividad de agua ($a_w$) y propiciando hongos toxigénicos.
+
+---
+
+### 🧪 Reporte de Auditoría Optimizado (Resultados del Benchmark UE)
+
+<details>
+<summary><b>🤖 Desplegar Reporte de Auditoría - GPT-4o mini (Prompt Blindado)</b></summary>
+
+*   **Texto extraído / Datos de la imagen:** Harina de trigo enriquecida, azúcar, grasa vegetal de palma, suero de leche en polvo, lecitina de soya (E-322), dióxido de titanio (E-171). Instrucciones de empaque: Una vez abierto, mantener a temperatura ambiente de 35ºC por 60 días.
+*   **Cumplimiento de Reg. 1169/2011 (Alérgenos):**
+    *   Alérgenos detectados: Wheat (harina de trigo), Milk (suero de leche en polvo), Soy (lecitina de soya).
+    *   No se observa declaración explícita de alérgenos en un formato destacado (por ejemplo, en negrita o con un color de fondo diferente) como lo exige el Artículo 21 del Reglamento 1169/2011.
+    *   La falta de un formato de declaración claro y destacado para los alérgenos representa un **INCUMPLIMIENTO REGULATORIO INMEDIATO**.
+*   **Estatus de Aditivos de la EFSA (Alertas de Seguridad):**
+    *   El dióxido de titanio (E-171) ha sido clasificado como no seguro para su uso como aditivo alimentario por la EFSA, y su uso está estrictamente prohibido en la UE bajo el Reglamento (UE) 2022/63.
+    *   La presencia de E-171 en la lista de ingredientes representa un incumplimiento crítico de la normativa vigente.
+*   **Riesgo Bromatológico y Microbiológico:**
+    *   Las instrucciones de empaque indican mantener el producto a 35ºC por 60 días una vez abierto. Esta temperatura es alta y puede favorecer el crecimiento de microorganismos, especialmente si el producto es higroscópico.
+    *   La falta de un empaque hermético puede aumentar el riesgo de absorción de humedad y, por lo tanto, de crecimiento microbiano, lo que podría comprometer la seguridad del producto.
+*   **Veredicto Final:** **NO CONFORME CON LA NORMATIVA DE LA UE**.
+    *   INCUMPLIMIENTO REGULATORIO por falta de declaración de alérgenos en formato destacado.
+    *   Uso de dióxido de titanio (E-171) prohibido en la UE.
+    *   Las condiciones de almacenamiento propuestas no son adecuadas para garantizar la estabilidad microbiológica y la calidad del producto.
+</details>
 
 ---
 
