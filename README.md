@@ -116,6 +116,10 @@ Sometido a una matriz crítica de prueba: *"Enriched flour (wheat flour, niacin,
 
 El proyecto está diseñado bajo una arquitectura jerárquica de agentes en cascada. Un **Agente Director (Orquestador Supremo)** recibe la lista de ingredientes o la imagen del empaque, identifica la región de destino y delega el análisis al auditor especializado:
 
+## 🗺️ Arquitectura Global del Sistema (Multi-Agente)
+
+El proyecto está diseñado bajo una arquitectura jerárquica de agentes en cascada. Un **Agente Director (Orquestador Supremo)** recibe la lista de ingredientes o la imagen del empaque, identifica la región de destino y delega el análisis al auditor especializado:
+
 ```text
                      ┌──> 🤖 Agente Auditor EUROPA (Reg. 1169 / EFSA)
                      │
@@ -124,7 +128,14 @@ El proyecto está diseñado bajo una arquitectura jerárquica de agentes en casc
                                      └──> 🤖 AGENTE DIRECTOR LATAM (Filtro Geográfico)
                                                    │
                                                    ├──> 🇲🇽 Bloque México (NOM-051)
+                                                   │
                                                    ├──> 🇦🇷🇧🇷 Bloque MERCOSUR (Resoluciones GMC)
-                                                   ├──> 🇨🇱🇨🇴 Bloque Alianza del Pacífico (Sellos)
-                                                   └──> 📜 Bloque Centroamérica y Caribe (RTCA/Codex)
+                                                   │     (Argentina, Brasil, Uruguay, Paraguay, Venezuela, Bolivia)
+                                                   │
+                                                   ├──> 🇨🇱🇨🇴 Bloque Alianza del Pacífico y Región Andina (Sellos)
+                                                   │     (Chile, Colombia, Perú, Ecuador)
+                                                   │
+                                                   └──> 📜 Bloque Centroamérica y Caribe (RTCA / Codex)
+                                                         (Costa Rica, El Salvador, Guatemala, Honduras, 
+                                                          Nicaragua, Panamá, Cuba, Rep. Dominicana, Haití)
 ```
