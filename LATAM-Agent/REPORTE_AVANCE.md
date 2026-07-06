@@ -56,3 +56,18 @@ Sometimos el sistema a un segundo reto con un empaque de "Mini Alfajores" de Arg
   3. Emitió un rechazo con **Observaciones Críticas** por infracción publicitaria y falta de sellos frontales visibles, sin necesidad de leer la tabla nutricional trasera.
 
 Esto demuestra que el sistema no solo debe leer texto (OCR), sino interpretar el diseño gráfico del empaque bajo el marco legal específico de cada país.
+
+---
+
+## 🔍 1.2. Hallazgos del Benchmark (Caso de Estudio 3: Argentina - Cumplimiento Exitoso)
+
+Para validar la precisión del sistema en escenarios de cumplimiento positivo, auditamos un empaque de "bon o bon mini alfajor" (Arcor), un producto industrial complejo con múltiples matrices lipídicas y alérgenos. Los resultados arrojaron un doble aprendizaje (técnico y operativo):
+
+* **Análisis Avanzado de Gemini (Flash):** Demostró un nivel de precisión quirúrgica. A diferencia de los casos anteriores, el modelo validó que el producto **cumple al 100% con la normativa argentina (Ley 27.642 y CAA)**:
+  1. **Validación Tipográfica:** Confirmó el uso correcto de mayúsculas y negritas en la declaración de alérgenos (*"CONTIENE SULFITOS, MANÍ..."*).
+  2. **Auditoría Química/Nutricional:** Correlacionó los ingredientes (aceites totalmente hidrogenados) con la declaración de $0\text{ g}$ de grasas trans en la tabla, validando la eficiencia del proceso de interesterificación.
+  3. **Validación de Sellos y Marketing:** Verificó que los 4 octágonos frontales (*Exceso en Azúcares, Grasas, etc.*) corresponden matemáticamente al perfil de la OPS y que el diseño gráfico es puramente abstracto/geométrico, respetando la prohibición de ganchos infantiles.
+* **Limitación Operativa de GPT-4o:** El modelo interrumpió su servicio debido al agotamiento de la cuota de créditos/tokens por alta demanda visual. 
+
+### 💡 Conclusión de la Fase de Benchmarking:
+Este caso demuestra que **Gemini Flash ofrece una relación costo-beneficio e inteligencia visual óptima para actuar como el motor principal de los Sub-Agentes de validación masiva**, mientras que modelos más densos (como GPT-4o) pueden ser reservados mediante el Agente Director solo para segundas opiniones o arbitrajes complejos.
