@@ -43,3 +43,16 @@ Para construir un sistema de nivel corporativo, unificado y con escalabilidad in
       └──> ... (Leyes Locales)                                                      └──> ... (Resto de Países)
 
 ```
+---
+
+## 🔍 1.1. Hallazgos del Benchmark (Caso de Estudio 2: Argentina)
+
+Sometimos el sistema a un segundo reto con un empaque de "Mini Alfajores" de Argentina, donde las imágenes del frente del empaque no mostraban la tabla nutricional ni la lista de ingredientes. Los resultados confirmaron por qué la arquitectura jerárquica con modelos multimodales avanzados es el camino correcto:
+
+* **Análisis Plano de GPT-4o:** Se limitó a rechazar el producto porque "no observa los ingredientes ni la información nutricional". Aunque su veredicto es correcto (Rechazado), su capacidad de análisis visual fue pasiva; no identificó elementos gráficos del empaque que ya violaban la ley por sí solos.
+* **Análisis de Visión Avanzada de Gemini:** Logró un diagnóstico brillante de nivel inspector sanitario de la ANMAT. Aunque tampoco tenía la tabla de ingredientes, aplicó la **Ley 27.642 de Argentina** sobre el diseño gráfico frontal:
+  1. Detectó que el empaque utiliza la camiseta de la selección nacional de fútbol (el número "10", el escudo y las estrellas).
+  2. Aplicó el Artículo 9 de la ley argentina, que prohíbe taxativamente personajes, deportistas o ganchos publicitarios en productos que, por su naturaleza (alfajor de dulce de leche), superan los límites de la OPS y deben llevar octógonos negros.
+  3. Emitió un rechazo con **Observaciones Críticas** por infracción publicitaria y falta de sellos frontales visibles, sin necesidad de leer la tabla nutricional trasera.
+
+Esto demuestra que el sistema no solo debe leer texto (OCR), sino interpretar el diseño gráfico del empaque bajo el marco legal específico de cada país.
