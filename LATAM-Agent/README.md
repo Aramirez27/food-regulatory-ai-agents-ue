@@ -24,3 +24,12 @@ El agente actúa como un "enrutador virtual". Cuando el usuario sube un texto o 
                     ├── Alianza del Pacífico ─> (Leyes de Sellos Frontales)
                     └── Centroamérica/Caribe ─> (RTCA / Codex)
 ```
+📋 Criterios Críticos de Evaluación por Bloque
+Octágonos de Advertencia y Sellos: Monitoreo y proyección de advertencias frontales en México, Chile, Colombia y Perú (los marcos más estrictos en azúcares, sodio y grasas).
+
+Leyendas para Niños: Identificación de edulcorantes y cafeína para activación de alertas obligatorias (específico de la NOM-051 en México).
+
+Destaque de Alérgenos: Verificación por visión artificial de que los alérgenos estén tipográficamente resaltados en los bloques donde la norma nacional lo exija.
+
+
+
