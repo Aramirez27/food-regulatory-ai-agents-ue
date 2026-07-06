@@ -139,3 +139,47 @@ El proyecto está diseñado bajo una arquitectura jerárquica de agentes en casc
                                                          (Costa Rica, El Salvador, Guatemala, Honduras, 
                                                           Nicaragua, Panamá, Cuba, Rep. Dominicana, Haití)
 ```
+🌎 Fase 3: Latinoamérica (LATAM) — En Desarrollo 🚧
+El análisis regulatorio en América Latina presenta un desafío único debido a la fragmentación normativa. Para garantizar la máxima precisión técnica y evitar la saturación de contexto, este módulo utiliza un Sub-Director Regional que enruta las consultas de forma automática a través de 4 Macro-Bloques Regulatorios que cubren 20 países:
+
+👉 Ver planes de diseño de Prompt de LATAM (Próximamente)
+
+📦 Cobertura Geográfica y Marcos Normativos
+El agente procesa el contenido (soporte multimodal para texto e imágenes mediante OCR) y aplica el criterio correspondiente:
+
+Norteamérica (México):
+
+Norma: NOM-051-SCFI/SSA1.
+
+Foco: Cálculo de perfiles críticos para la inclusión de octágonos negros de advertencia y leyendas precautorias obligatorias para niños (Edulcorantes/Cafeína).
+
+Bloque MERCOSUR amplio (Argentina, Brasil, Uruguay, Paraguay, Venezuela, Bolivia):
+
+Norma: Resoluciones GMC (Grupo Mercado Común).
+
+Foco: Validación de listas positivas de aditivos y adición de normativas de etiquetado frontal local (como la Ley 27.642 en Argentina).
+
+Bloque Alianza del Pacífico y Región Andina (Chile, Colombia, Perú, Ecuador):
+
+Norma: Ley 20.606 (Chile), Ley 30021 (Perú), Res. 2492 (Colombia), Semáforo Nutricional (Ecuador).
+
+Foco: Monitoreo estricto de perfiles de nutrientes y alertas por activación de sellos de advertencia frontal ("Alto en").
+
+Bloque Centroamérica y Caribe (Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panamá, Cuba, República Dominicana, Haití):
+
+Norma: Reglamento Técnico Centroamericano (RTCA) y Directrices del Codex Alimentarius (Codex Stan 1-1985).
+
+Foco: Validación estandarizada de alérgenos y aditivos bajo consenso internacional.
+
+📋 Estructura de Salida del Reporte (LATAM)
+Al detectar el país de destino, el agente genera el dictamen estructurado en cinco bloques técnicos:
+
+Bloque Regulatorio Aplicado: Identificación del tratado o norma nacional utilizada.
+
+Cumplimiento de Alérgenos: Evaluación de declaraciones obligatorias y formato visual en la etiqueta (OCR).
+
+Alertas de Aditivos y Conservación: Evaluación de aditivos permitidos en la región y estabilidad microbiológica de la matriz alimentaria.
+
+Proyección de Etiquetado Frontal (Sellos): Predicción de los sellos u octágonos de advertencia que el producto está obligado a exhibir según sus ingredientes y composición.
+
+Veredicto Regional: Dictamen final (APROBADO o RECHAZADO CON OBSERVACIONES).
