@@ -1,1 +1,32 @@
-
+{
+  "agent_name": "LATAM Food Regulatory Router",
+  "version": "1.0.0",
+  "supported_countries": 20,
+  "routing_matrix": {
+    "mexico": {
+      "standard": "NOM-051-SCFI/SSA1",
+      "critical_features": ["black_octagons", "children_warnings_sweeteners", "children_warnings_caffeine"]
+    },
+    "mercosur": {
+      "countries": ["argentina", "brazil", "uruguay", "paraguay", "venezuela", "bolivia"],
+      "base_standard": "GMC Resolutions",
+      "local_overrides": {
+        "argentina": "Ley 27.642 (Nutritional Octagons)"
+      }
+    },
+    "alliance_pacific_andean": {
+      "chile": { "standard": "Ley 20.606", "feature": "Alto En Seals" },
+      "peru": { "standard": "Ley 30021", "feature": "Advertising Warnings" },
+      "colombia": { "standard": "Resolución 2492/2022", "feature": "Nutritional Octagons" },
+      "ecuador": { "standard": "Nutritional Traffic Light System" }
+    },
+    "rtca_central_america": {
+      "countries": ["costa_rica", "el_salvador", "guatemala", "honduras", "nicaragua", "panama"],
+      "standard": "RTCA 67.01.02 / RTCA 67.01.60"
+    },
+    "codex_caribbean": {
+      "countries": ["cuba", "dominican_republic", "haiti"],
+      "standard": "Codex Stan 1-1985 Baseline"
+    }
+  }
+}
