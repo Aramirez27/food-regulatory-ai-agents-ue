@@ -183,3 +183,15 @@ Alertas de Aditivos y Conservación: Evaluación de aditivos permitidos en la re
 Proyección de Etiquetado Frontal (Sellos): Predicción de los sellos u octágonos de advertencia que el producto está obligado a exhibir según sus ingredientes y composición.
 
 Veredicto Regional: Dictamen final (APROBADO o RECHAZADO CON OBSERVACIONES).
+
+---
+
+### 🥣 Caso de Estudio: Chile - Cereal de Desayuno Infantil (Tipo Froot Loops)
+Validación del ecosistema frente a la estricta Ley 20.606 y el Reglamento Sanitario de los Alimentos (RSA - Decreto 977/96).
+
+*   **Análisis Multimodal de Gemini / GPT-4o:** Ambas inteligencias demostraron un nivel de inspección senior equivalente al de un fiscalizador de la SEREMI de Salud:
+    1.  *Matemática de Sellos:* Ignoraron el "espejismo de la porción" comercial, calculando sobre la base fija de $100\text{ g}$. Detectaron de inmediato que el producto superaba los límites críticos de energía ($380\text{ kcal} \ge 275\text{ kcal}$) y azúcares ($38\text{ g} \ge 10\text{ g}$), proyectando obligatoriamente los sellos **"ALTO EN CALORÍAS"** y **"ALTO EN AZÚCARES"**.
+    2.  *Fiscalización de Marketing (Art. 7):* El sistema detectó con éxito la ilustración frontal de un **Tucán animado** y activó una **No Conformidad Mayor (🔴 Riesgo Alto)**, dictaminando que la presencia de personajes infantiles está prohibida por ley en productos que lleven sellos de advertencia.
+    3.  *Control de Alérgenos (Art. 107 l):* Penalizaron la declaración en texto plano de las harinas de trigo y avena (*Gluten*), exigiendo el uso obligatorio de mayúsculas, negritas y la frase de advertencia *"CONTIENE..."*.
+
+*   **💡 Veredicto del Sistema:** **RECHAZADO**. El producto fue bloqueado preventivamente antes de su ingreso al mercado, emitiendo un reporte con las tres acciones correctivas exactas para evitar sumarios sanitarios reales.
