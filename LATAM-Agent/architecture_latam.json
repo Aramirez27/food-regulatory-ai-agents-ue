@@ -1,31 +1,53 @@
 {
-  "agent_name": "LATAM Food Regulatory Router",
-  "version": "1.0.0",
+  "agent_name": "LATAM Food Regulatory Router Agent",
+  "version": "2.0.0",
+  "architecture_type": "Hierarchical Cascade Architecture",
+  "orchestator_reference": "sub_director_latam.md",
   "supported_countries": 20,
+  "system_status": {
+    "active_agents": ["argentina"],
+    "fallback_strategy": "Codex Alimentarius CXS 1-1985 (Baseline Audit)"
+  },
   "routing_matrix": {
-    "mexico": {
-      "standard": "NOM-051-SCFI/SSA1",
-      "critical_features": ["black_octagons", "children_warnings_sweeteners", "children_warnings_caffeine"]
+    "mercosur_block": {
+      "argentina": {
+        "status": "active_testing",
+        "prompt_source": "/paises/argentina_ley27642.md",
+        "standard": "Ley 27.642 (Nutritional Octagons) & CAA",
+        "inspection_mode": "Pragmatic Field Inspector (Flexibility Rule)",
+        "features": {
+          "analytical_tolerance": 0.05,
+          "risk_framework": "Risk Traffic Light System (Green/Yellow/Red)",
+          "special_validation": ["allergen_typography", "historical_brand_logos_coexistence"]
+        }
+      },
+      "brazil": { "status": "pipeline", "base_standard": "RDC 429/2020" },
+      "uruguay": { "status": "pipeline", "base_standard": "Decreto 272/018" },
+      "paraguay": { "status": "pipeline", "base_standard": "GMC Resolutions Baseline" },
+      "venezuela": { "status": "pipeline", "base_standard": "GMC Resolutions Baseline" },
+      "bolivia": { "status": "pipeline", "base_standard": "GMC Resolutions Baseline" }
     },
-    "mercosur": {
-      "countries": ["argentina", "brazil", "uruguay", "paraguay", "venezuela", "bolivia"],
-      "base_standard": "GMC Resolutions",
-      "local_overrides": {
-        "argentina": "Ley 27.642 (Nutritional Octagons)"
+    "mexico_block": {
+      "mexico": {
+        "status": "pipeline",
+        "standard": "NOM-051-SCFI/SSA1",
+        "critical_features": ["black_octagons", "children_warnings_sweeteners", "children_warnings_caffeine"]
       }
     },
     "alliance_pacific_andean": {
-      "chile": { "standard": "Ley 20.606", "feature": "Alto En Seals" },
-      "peru": { "standard": "Ley 30021", "feature": "Advertising Warnings" },
-      "colombia": { "standard": "Resolución 2492/2022", "feature": "Nutritional Octagons" },
-      "ecuador": { "standard": "Nutritional Traffic Light System" }
+      "chile": { "status": "pipeline", "standard": "Ley 20.606", "feature": "Alto En Seals" },
+      "peru": { "status": "pipeline", "standard": "Ley 30021", "feature": "Advertising Warnings" },
+      "colombia": { "status": "pipeline", "standard": "Resolución 2492/2022", "feature": "Nutritional Octagons" },
+      "ecuador": { "status": "pipeline", "standard": "Nutritional Traffic Light System" }
     },
     "rtca_central_america": {
       "countries": ["costa_rica", "el_salvador", "guatemala", "honduras", "nicaragua", "panama"],
+      "status": "pipeline",
       "standard": "RTCA 67.01.02 / RTCA 67.01.60"
     },
     "codex_caribbean": {
       "countries": ["cuba", "dominican_republic", "haiti"],
+      "status": "pipeline",
       "standard": "Codex Stan 1-1985 Baseline"
     }
   }
