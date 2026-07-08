@@ -1,35 +1,32 @@
-# 🌎 LATAM Regulatory Auditor Agent
+# 🌎 LATAM Regulatory Auditor Agent (Hierarchical Architecture)
 
-Este módulo contiene la lógica, prompts y arquitectura de enrutamiento para la auditoría bromatológica automatizada en **América Latina**, cubriendo un espectro de **20 países** divididos en 4 macro-bloques regulatorios.
+Este módulo contiene la lógica, prompts y la arquitectura de enrutamiento para la auditoría bromatológica automatizada en **América Latina**, diseñada para cubrir un espectro de **20 países** mediante un sistema jerárquico en cascada liderado por un **Sub-Director Regional**.
 
-El agente cuenta con capacidades **multimodales (Visión + OCR)**, lo que le permite extraer ingredientes desde fotografías de empaques reales y evaluar el cumplimiento visual del etiquetado.
+El agente cuenta con capacidades **multimodales (Visión + OCR)**, lo que le permite extraer ingredientes desde fotografías de empaques reales, evaluar tablas nutricionales y verificar el cumplimiento visual del etiquetado frontal.
 
-## 🗂️ Contenido de la Carpeta
-* **[`prompt_latam.txt`](./prompt_latam.txt):** Contiene el System Prompt optimizado y blindado para modelos LLM (GPT-4o mini, Gemini Pro).
-* **`architecture_latam.json`:** Matriz de mapeo de países y leyes asociadas para integraciones vía API.
+---
 
-## ⚙️ Funcionamiento del Enrutador Geográfico
+## 🗂️ Nueva Estructura del Módulo
+*   📄 **`sub_director_latam.md`:** El agente orquestador regional (Cerebro de LATAM). Recibe la consulta, identifica el país y delega el análisis al sub-auditor correspondiente.
+*   📁 **`paises/`:** Carpeta que alojará de forma independiente los prompts de los 20 países.
+    *   📄 **`argentina_ley27642.md`:** 🚀 *¡Activo y en fase de pruebas!* Primer agente local implementado, configurado con un criterio pragmático de inspección y un **Semáforo de Riesgo Regulatorio**.
+    *   *Próximamente:* Chile (Ley 20.606), México (NOM-051) y los 17 países restantes.
 
-El agente actúa como un "enrutador virtual". Cuando el usuario sube un texto o una imagen, el flujo sigue los siguientes pasos lógicos:
+---
+
+## ⚙️ Funcionamiento del Enrutador Geográfico (En Cascada)
+
+Cuando el usuario ingresa un empaque al ecosistema global, el **Director Global** lo deriva a este módulo, donde el **Sub-Director de LATAM** ejecuta el siguiente flujo lógico:
 
 ```text
-[Entrada: Ingredientes + País] 
+[Entrada: Datos + País de LATAM] 
              │
              ▼
-   ¿País especificado? 
-     ├── NO ──> [Solicitar aclaración al usuario: "Indique el país de destino"]
-     └── SÍ ──> [Identificar Macro-Bloque]
-                    ├── México ───────────────> (NOM-051)
-                    ├── MERCOSUR ─────────────> (Resoluciones GMC)
-                    ├── Alianza del Pacífico ─> (Leyes de Sellos Frontales)
-                    └── Centroamérica/Caribe ─> (RTCA / Codex)
+     ¿País desarrollado? 
+       ├── NO ──> [Aplicar Codex Alimentarius (FAO/OMS) como arbitraje preventivo]
+       └── SÍ ──> [Activar Agente Local en /paises/]
+                     ├── Argentina ────> (Ley 27.642 + Semáforo de Riesgo Pragmático) 🟢🟡🔴
+                     ├── México ───────> (Próximamente - NOM-051)
+                     ├── Chile ────────> (Próximamente - Ley 20.606)
+                     └── Otros 17 ─────> (En desarrollo activo)
 ```
-📋 Criterios Críticos de Evaluación por Bloque
-Octágonos de Advertencia y Sellos: Monitoreo y proyección de advertencias frontales en México, Chile, Colombia y Perú (los marcos más estrictos en azúcares, sodio y grasas).
-
-Leyendas para Niños: Identificación de edulcorantes y cafeína para activación de alertas obligatorias (específico de la NOM-051 en México).
-
-Destaque de Alérgenos: Verificación por visión artificial de que los alérgenos estén tipográficamente resaltados en los bloques donde la norma nacional lo exija.
-
-
-
