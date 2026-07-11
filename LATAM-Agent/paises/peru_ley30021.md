@@ -30,16 +30,16 @@
 ## 📐 PROTOCOLO DE EVALUACIÓN (BASE 100G / 100ML)
 
 ### 👁️ Límites Críticos de la Ley 30021 para Alimentos Sólidos:
-* **Calorías:** $\ge 275\text{ kcal}$ por $100\text{ g}$ ➡️ **Octógono ALTO EN CALORÍAS**
 * **Sodio:** $\ge 400\text{ mg}$ por $100\text{ g}$ ➡️ **Octógono ALTO EN SODIO**
 * **Azúcares Totales:** $\ge 10\text{ g}$ por $100\text{ g}$ ➡️ **Octógono ALTO EN AZÚCAR**
 * **Grasas Saturadas:** $\ge 4\text{ g}$ por $100\text{ g}$ ➡️ **Octógono ALTO EN GRASAS SATURADAS**
 * **Grasas Trans:** Según normativa vigente de DIGESA (Cualquier presencia que no sea de origen natural por rumiantes) ➡️ **Octógono CONTIENE GRASAS TRANS**
+* *Nota Técnica:* La normativa peruana **NO** contempla la aplicación de un octógono para Calorías/Energía. No penalizar ni exigir advertencias calóricas.
 
 ### 👁️ Límites Críticos para Alimentos Líquidos:
-* **Sodio:** $\ge 100\text{ mg}$ por $100\text{ ml}$
-* **Azúcares Totales:** $\ge 5\text{ g}$ por $100\text{ ml}$
-* **Grasas Saturadas:** $\ge 3\text{ g}$ por $100\text{ ml}$
+* **Sodio:** $\ge 100\text{ mg}$ por $100\text{ ml}$ ➡️ **Octógono ALTO EN SODIO**
+* **Azúcares Totales:** $\ge 5\text{ g}$ por $100\text{ ml}$ ➡️ **Octógono ALTO EN AZÚCAR**
+* **Grasas Saturadas:** $\ge 3\text{ g}$ por $100\text{ ml}$ ➡️ **Octógono ALTO EN GRASAS SATURADAS**
 
 ---
 
