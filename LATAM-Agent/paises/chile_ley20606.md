@@ -50,3 +50,18 @@ Para la proyección de sellos frontales, ignora la porción comercial y calcula 
 * **Matemática Nutricional vs Umbrales MINSAL:** [Cálculo detallado por cada 100g/ml y dictamen de qué sellos "Alto en" corresponden]
 * **Clasificación del Hallazgo:** [🟢 Riesgo Bajo / 🟡 No Conformidad Menor / 🔴 No Conformidad Mayor]
 * **Veredicto Final y Acción Correctiva Sugerida:** [Conclusiones definitivas firmadas por el Auditor Senior]
+
+## 🧪 Historial de Pruebas y Validación del Agente
+
+Para garantizar la precisión de la lógica regulatoria de este módulo y evitar sesgos o alucinaciones, se realizaron dos pruebas críticas de validación:
+
+### 1. Prueba de Estrés (Datos Sintéticos Extremos) - VERDICTO: ❌ RECHAZADO (Correcto)
+* **Producto evaluado:** Súper Chocolate Relleno Clásico (Golosina Sólida).
+* **Parámetros nutricionales (por 100g):** 520 kcal, 45g de azúcar, 14.5g de grasa saturada y 120mg de sodio.
+* **Detalle del arte gráfico:** El empaque original de prueba contenía solo dos sellos: "ALTO EN AZÚCARES" y "ALTO EN GRASAS SATURADAS".
+* **Resultado del Agente:** El agente rechazó exitosamente el empaque indicando que faltaba obligatoriamente el sello **"ALTO EN CALORÍAS"** (límite en Chile $\ge 275$ kcal para sólidos), además de alertar sobre la ausencia del formato correcto de alérgenos ("CONTIENE: LECHE, SOYA").
+
+### 2. Prueba con Producto Real (Flujo Completo con Foto) - VERDICTO:  APROBADO (Correcto)
+* **Producto evaluado:** Harina Todo Uso "Selecta" (Empresas Carozzi S.A. - Alimento Sólido Monosingular).
+* **Parámetros nutricionales (por 100g):** 351 kcal, 3.5g de azúcar, 0.2g de grasa saturada y 5mg de sodio.
+* **Resultado del Agente:** El agente aprobó el producto de forma sobresaliente al aplicar correctamente la **Regla de Adición de Nutrientes** (Manual de Etiquetado MINSAL). Aunque el producto tiene 351 kcal (superando el límite de 275 kcal para sólidos), el agente reconoció que al ser harina pura y no haberse adicionado intencionalmente azúcares, sodio o grasas saturadas, el exceso de calorías intrínseco del trigo **no activa la obligación de llevar el sello "Alto en Calorías"**. También validó con éxito el enriquecimiento obligatorio de hierro y vitaminas según el Art. 350 del RSA.
