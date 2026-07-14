@@ -60,3 +60,17 @@
 * **Evaluación de Restricciones Publicitarias (INDECOPI):** [Verificación de que no existan elementos dirigidos a menores si el producto califica para octógonos]
 * **Clasificación del Hallazgo (Semáforo):** [🟢 Verde / 🟡 Amarillo / 🔴 Rojo]
 * **Final Verdict & Corrective Actions:** [Veredicto final conforme a las disposiciones de DIGESA/Ley 30021 + Acciones obligatorias]
+
+
+## 🧪 Historial de Pruebas y Validación del Agente
+
+Para garantizar la precisión de la lógica regulatoria y blindar al agente contra falsos positivos (como la aplicación incorrecta de criterios calóricos de otros países), se realizó la siguiente prueba de validación crítica:
+
+### 1. Prueba con Producto Real (Empaque Sublime® Bombones de Nestlé) - VERDICTO: 🟢 APROBADO CON RECOMENDACIÓN (Correcto)
+* **Producto evaluado:** SUBLIME® BOMBONES - Chocolate con leche con maní (Formato Sólido).
+* **Parámetros nutricionales (por 100g):** 557 kcal, 50.2g de azúcares totales, 16.5g de grasas saturadas y 101mg de sodio.
+* **Detalle del arte gráfico evaluado:** El empaque real cuenta con dos octágonos ("ALTO EN AZÚCAR" y "ALTO EN GRASAS SATURADAS") junto a la leyenda obligatoria "EVITAR SU CONSUMO EXCESIVO".
+* **Resultado del Agente:** El agente aprobó el empaque con éxito. Demostró una calibración matemática perfecta al:
+  1. Identificar que los parámetros de azúcares ($\ge 10\text{ g}$) y grasas saturadas ($\ge 4\text{ g}$) excedían los límites de la Ley Nº 30021, validando la correcta presencia de ambos octágonos en el diseño.
+  2. **Ignorar el exceso de calorías (557 kcal) como gatillo de octógonos**, entendiendo que bajo la legislación peruana no existe advertencia publicitaria para la energía/calorías, evitando un falso rechazo crítico.
+  3. Validar de forma correcta el resguardo de alérgenos destacados en negrita (leche, maní, soya) y sugerir auditorías preventivas para las trazas de gluten y nueces.
