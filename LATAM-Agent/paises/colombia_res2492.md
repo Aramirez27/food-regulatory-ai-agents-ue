@@ -65,3 +65,18 @@ Debes estructurar tu respuesta en este formato exacto:
     | Edulcorantes | | | | |
 *   **Clasificación del Hallazgo (Semáforo):** [🔴 RIESGO ALTO / 🟡 RIESGO MEDIO / 🟢 RIESGO BAJO]
 *   **Veredicto Final & Acciones Correctivas (INVIMA):** [Resolución del caso y modificaciones urgentes obligatorias]
+
+
+## 🔄 REGLA DE EXCEPCIÓN CRÍTICA: PRODUCTOS RECONSTITUIDOS Y APORTES NO SIGNIFICATIVOS (INVIMA)
+
+Para evitar falsos positivos y errores de calificación en productos concentrados, deshidratados o en polvo (bebidas instantáneas, caldos, geles para diluir, etc.):
+
+1. **Evaluación obligatoria sobre reconstituido:**
+   Toda evaluación de límites y nutrientes críticos (Sodio, Azúcares Libres, Grasas, Edulcorantes) **DEBE realizarse sobre la base del producto listo para el consumo**, siguiendo al pie de la letra las instrucciones de preparación provistas por el fabricante en el empaque (p. ej., gramos de polvo diluidos en mililitros de agua).
+
+2. **Umbral de Aporte No Significativo (Exención Total):**
+   De conformidad con los criterios técnicos del INVIMA y el Ministerio de Salud:
+   * Si en la porción de referencia del producto ya preparado/reconstituido, los valores caen bajo el estándar de **"Cero" o "Aporte No Significativo"** (Energía $< 4\text{ kcal}$, Azúcares Libres $< 0.5\text{ g}$ y Sodio $< 5\text{ mg}$):
+     * El producto se declara **EXENTO** de la aplicación del perfil de nutrientes críticos.
+     * **Exención de Sello de Edulcorantes:** Al no calificar como un alimento con nutrientes críticos en exceso tras su dilución obligatoria, la adición de edulcorantes de mesa o industriales **NO activa el sello "CONTIENE EDULCORANTES"**.
+     * **Preservación de los Claims:** Al no portar ningún sello de advertencia en su estado de consumo final, el producto **mantiene el derecho legal a declarar claims nutricionales** (p. ej., "Con vitaminas", "Sin conservantes").
